@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Donor_1</string>
+    <string name="food_type_label">Food Type:</string>
+    <string name="quantity_label">Food Type:</string>
+    <string name="expiration_date_label">Food Type:</string>
+    <string name="pickup_location_label">Food Type:</string>
+    <string name="submit_donation_button">Food Type:</string>
+    <string name="dashboard_header">Food Type:</string>
+    <string name="donation_history_label">donor</string>
+    <string name="add_food">Add Food</string>
+    <string name="view_about">About Us</string>
+</resources>

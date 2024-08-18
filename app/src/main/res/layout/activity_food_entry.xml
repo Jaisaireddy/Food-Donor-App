@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Donor dashboard header -->
+    <TextView
+        android:id="@+id/dashboard_header"
+        android:text="@string/dashboard_header"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <!-- Donation form -->
+    <LinearLayout
+        android:id="@+id/donation_form"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Donation form fields -->
+        <TextView
+            android:id="@+id/food_type_label"
+            android:text="@string/food_type_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/food_type_field"
+            android:inputType="text"
+            android:hint="Enter Food Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/quantity_label"
+            android:text="Quantity:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/quantity_field"
+            android:inputType="number"
+            android:hint="Enter Quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/expiration_date_label"
+            android:text="Expiration Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/expiration_date_field"
+            android:inputType="date"
+            android:hint="Enter Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pickup_location_label"
+            android:text="pickup_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/pickup_location_field"
+            android:inputType="text"
+            android:hint="Enter Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Donation form submit button -->
+        <Button
+            android:id="@+id/submit_donation_button"
+            android:text="ADD and Send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Donation history list -->
+    <TextView
+        android:id="@+id/show_all_data_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/donation_history_list"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/donation_history_label"
+        android:text="Donor(Thank You)"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/donation_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
